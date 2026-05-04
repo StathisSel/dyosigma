@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5 λόγοι που η ιστοσελίδα σου δεν μετατρέπει — Dyo Sigma Blog</title>
+  <meta name="description" content="Ανακάλυψε τα πιο κοινά λάθη που κάνουν οι ιστοσελίδες και πώς να τα διορθώσεις.">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .article-hero {
+      padding: 4rem 0 3rem;
+      border-bottom: 1px solid var(--border);
+      background: radial-gradient(ellipse at 50% 0%, rgba(79,124,255,0.07) 0%, transparent 70%);
+    }
+    .article-meta { display:flex; gap:1rem; align-items:center; flex-wrap:wrap; margin-bottom:1.5rem; }
+    .article-tag {
+      font-size:0.72rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase;
+      color:var(--accent); background:var(--accent-glow); padding:4px 12px; border-radius:100px;
+    }
+    .article-date { font-size:0.82rem; color:var(--muted); }
+    .article-read { font-size:0.82rem; color:var(--muted); }
+    .article-body {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 4rem 0 6rem;
+    }
+    .article-body h2 {
+      font-size:1.6rem; margin: 2.5rem 0 1rem;
+      color: var(--white);
+    }
+    .article-body h3 {
+      font-size:1.15rem; margin: 2rem 0 0.75rem;
+      color: var(--white);
+    }
+    .article-body p { margin-bottom:1.2rem; font-size:1.02rem; line-height:1.75; }
+    .article-body ul { margin: 0 0 1.5rem 1.5rem; }
+    .article-body ul li { color:var(--muted); font-size:1rem; line-height:1.7; margin-bottom:0.4rem; }
+    .article-body strong { color:var(--white); }
+    .article-body .callout {
+      background:var(--card); border:1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius:0 var(--radius) var(--radius) 0;
+      padding:1.2rem 1.5rem; margin:2rem 0;
+    }
+    .article-body .callout p { margin:0; font-size:0.95rem; }
+    .back-btn {
+      display:inline-flex; align-items:center; gap:0.5rem;
+      font-family:var(--font-display); font-size:0.85rem; font-weight:600;
+      color:var(--muted); transition:color var(--transition);
+      margin-bottom:2rem;
+    }
+    .back-btn:hover { color:var(--white); }
+    .back-btn .arrow { font-size:1rem; }
+    .article-cta {
+      background: linear-gradient(135deg, rgba(79,124,255,0.1), rgba(0,212,170,0.05));
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      padding:2.5rem;
+      text-align:center;
+      margin-top:4rem;
+    }
+    .article-cta h3 { margin-bottom:0.75rem; }
+    .article-cta p { margin-bottom:1.5rem; }
+    .author-box {
+      display:flex; gap:1rem; align-items:center;
+      background:var(--card); border:1px solid var(--border);
+      border-radius:var(--radius); padding:1.5rem; margin:3rem 0;
+    }
+    .author-avatar {
+      width:52px; height:52px; border-radius:50%;
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+      display:flex; align-items:center; justify-content:center;
+      font-family:var(--font-display); font-size:1.1rem; font-weight:800; color:#fff;
+      flex-shrink:0;
+    }
+    .author-info strong { font-family:var(--font-display); font-size:0.95rem; font-weight:600; display:block; }
+    .author-info span { font-size:0.82rem; color:var(--muted); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="../index.html"><img src="../images/logo.png" alt="Dyo Sigma" style="height:56px;width:auto;display:block;"></a>
+  <ul class="nav-links">
+    <li><a href="../index.html#services" data-i18n="nav_services"></a></li>
+    <li><a href="../about.html" data-i18n="nav_about"></a></li>
+    <li><a href="../portfolio.html" data-i18n="nav_portfolio"></a></li>
+    <li><a href="../blog.html" class="active" data-i18n="nav_blog"></a></li>
+    <li><a href="../index.html#pricing" data-i18n="nav_pricing"></a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-switch">
+      <button class="lang-btn" data-lang="el">ΕΛ</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+    <a href="../contact.html" class="btn-cta" data-i18n="nav_cta"></a>
+  </div>
+  <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu">
+  <a href="../index.html#services" data-i18n="nav_services"></a>
+  <a href="../about.html" data-i18n="nav_about"></a>
+  <a href="../portfolio.html" data-i18n="nav_portfolio"></a>
+  <a href="../blog.html" data-i18n="nav_blog"></a>
+  <a href="../index.html#pricing" data-i18n="nav_pricing"></a>
+  <a href="../contact.html" class="btn-cta" data-i18n="nav_cta"></a>
+</div>
+
+<main>
+
+<section class="article-hero">
+  <div class="container">
+    <a href="../blog.html" class="back-btn fade-up">
+      <span class="arrow">←</span>
+      <span data-i18n="back_blog"></span>
+    </a>
+    <div class="article-meta fade-up delay-1">
+      <span class="article-tag" data-i18n="b1_tag"></span>
+      <span class="article-date" data-i18n="b1_date"></span>
+      <span class="article-read" data-i18n="read_time_1"></span>
+    </div>
+    <h1 class="fade-up delay-2" data-i18n="b1_title"></h1>
+    <p class="fade-up delay-3" style="max-width:620px; font-size:1.1rem; margin-top:1rem;" data-i18n="b1_desc"></p>
+  </div>
+</section>
+
+<div class="container">
+  <div class="article-body">
+
+    <div class="author-box">
+      <div class="author-avatar">Σ</div>
+      <div class="author-info">
+        <strong>Stathis — Dyo Sigma</strong>
+        <span>Founder & Digital Strategist</span>
+      </div>
+    </div>
+
+    <!-- EL content -->
+    <div data-lang-block="el">
+      <p>Έχεις επενδύσει χρόνο και χρήμα σε ένα website, αλλά οι επισκέπτες φεύγουν χωρίς να κάνουν τίποτα; Δεν είσαι μόνος. Το 95%+ των ιστοσελίδων έχουν το ίδιο πρόβλημα — και τα αίτια είναι σχεδόν πάντα τα ίδια.</p>
+
+      <p>Ας δούμε τους 5 πιο κοινούς λόγους που μια ιστοσελίδα αποτυγχάνει να μετατρέψει επισκέπτες σε πελάτες.</p>
+
+      <h2>1. Δεν έχεις ξεκάθαρο Value Proposition</h2>
+      <p>Ο επισκέπτης έχει <strong>λιγότερο από 5 δευτερόλεπτα</strong> για να αποφασίσει αν θα μείνει στη σελίδα σου. Αν δεν καταλαβαίνει αμέσως τι κάνεις, για ποιον το κάνεις και γιατί είσαι η καλύτερη επιλογή — φεύγει.</p>
+      <div class="callout">
+        <p>💡 <strong>Λύση:</strong> Ο τίτλος του hero section πρέπει να απαντά σε τρεις ερωτήσεις ταυτόχρονα: Τι κάνεις; Για ποιον; Ποιο αποτέλεσμα φέρνεις;</p>
+      </div>
+
+      <h2>2. Αργό loading speed</h2>
+      <p>Κάθε επιπλέον δευτερόλεπτο φόρτωσης κοστίζει <strong>7% σε conversions</strong>. Ένα site που φορτώνει σε 4 δευτερόλεπτα χάνει σχεδόν το 1/3 των επισκεπτών του πριν καν δουν την αρχική σελίδα.</p>
+      <ul>
+        <li>Βελτιστοποίησε τις εικόνες (WebP format)</li>
+        <li>Χρησιμοποίησε CDN για τα static files</li>
+        <li>Ελαχιστοποίησε το JavaScript</li>
+        <li>Επέλεξε γρήγορο hosting</li>
+      </ul>
+
+      <h2>3. Δεν υπάρχει ξεκάθαρο CTA</h2>
+      <p>Πολλές ιστοσελίδες έχουν <strong>παντού κουμπιά</strong> που λένε "Μάθε περισσότερα" ή "Επικοινώνησε μαζί μας" — αλλά χωρίς context και urgency. Ο χρήστης δεν ξέρει τι θα γίνει αν πατήσει το κουμπί.</p>
+      <div class="callout">
+        <p>💡 <strong>Λύση:</strong> Κάθε σελίδα πρέπει να έχει ένα κύριο CTA που να είναι συγκεκριμένο. Αντί για "Επικοινώνησε", γράψε "Κλείσε δωρεάν 30λεπτη συμβουλευτική".</p>
+      </div>
+
+      <h2>4. Δεν υπάρχει social proof</h2>
+      <p>Οι άνθρωποι αγοράζουν από ανθρώπους που εμπιστεύονται. Αν δεν υπάρχουν testimonials, αξιολογήσεις, logos πελατών ή case studies στη σελίδα σου, ο επισκέπτης δεν έχει λόγο να σε εμπιστευτεί.</p>
+      <ul>
+        <li>Πρόσθεσε 3-5 testimonials από πραγματικούς πελάτες</li>
+        <li>Εμφάνισε logos γνωστών πελατών</li>
+        <li>Δείξε αριθμητικά αποτελέσματα (π.χ. "+40% leads σε 3 μήνες")</li>
+        <li>Χρησιμοποίησε φωτογραφίες πραγματικών ανθρώπων</li>
+      </ul>
+
+      <h2>5. Το site δεν είναι mobile-first</h2>
+      <p>Πάνω από το <strong>60% της κίνησης</strong> στο web γίνεται από κινητά. Αν η ιστοσελίδα σου δεν λειτουργεί τέλεια σε smartphone — με γρήγορο loading, εύκολη πλοήγηση και μεγάλα κουμπιά — χάνεις τη μισή αγορά.</p>
+      <div class="callout">
+        <p>💡 <strong>Test it:</strong> Άνοιξε τη σελίδα σου σε κινητό. Μπορείς να διαβάσεις εύκολα; Να πατήσεις τα κουμπιά; Να συμπληρώσεις τη φόρμα χωρίς zoom;</p>
+      </div>
+
+      <h2>Συμπέρασμα</h2>
+      <p>Ένα website που δεν μετατρέπει δεν είναι απλά "άσχημο design" — είναι χαμένα χρήματα. Η καλή είδηση είναι ότι αυτά τα προβλήματα διορθώνονται. Με τη σωστή στρατηγική και τεχνική υλοποίηση, μπορείς να μετατρέψεις την ιστοσελίδα σου από "ψηφιακή βιτρίνα" σε "πωλητή 24/7".</p>
+    </div>
+
+    <!-- EN content -->
+    <div data-lang-block="en" style="display:none;">
+      <p>You've invested time and money in a website, but visitors leave without doing anything? You're not alone. Over 95% of websites have the same problem — and the causes are almost always the same.</p>
+
+      <p>Let's look at the 5 most common reasons a website fails to convert visitors into customers.</p>
+
+      <h2>1. No clear Value Proposition</h2>
+      <p>A visitor has <strong>less than 5 seconds</strong> to decide whether to stay on your page. If they don't immediately understand what you do, for whom, and why you're the best choice — they leave.</p>
+      <div class="callout">
+        <p>💡 <strong>Solution:</strong> Your hero section headline must answer three questions at once: What do you do? For whom? What result do you deliver?</p>
+      </div>
+
+      <h2>2. Slow loading speed</h2>
+      <p>Every extra second of load time costs <strong>7% in conversions</strong>. A site that loads in 4 seconds loses almost a third of its visitors before they even see the homepage.</p>
+      <ul>
+        <li>Optimise images (WebP format)</li>
+        <li>Use a CDN for static files</li>
+        <li>Minify JavaScript</li>
+        <li>Choose fast hosting</li>
+      </ul>
+
+      <h2>3. No clear CTA</h2>
+      <p>Many websites have <strong>buttons everywhere</strong> saying "Learn more" or "Contact us" — but without context or urgency. The user doesn't know what will happen if they click the button.</p>
+      <div class="callout">
+        <p>💡 <strong>Solution:</strong> Every page should have one primary CTA that is specific. Instead of "Contact us", write "Book a free 30-minute consultation".</p>
+      </div>
+
+      <h2>4. No social proof</h2>
+      <p>People buy from people they trust. If there are no testimonials, reviews, client logos or case studies on your page, the visitor has no reason to trust you.</p>
+      <ul>
+        <li>Add 3-5 testimonials from real clients</li>
+        <li>Display logos of well-known clients</li>
+        <li>Show numerical results (e.g. "+40% leads in 3 months")</li>
+        <li>Use photos of real people</li>
+      </ul>
+
+      <h2>5. The site isn't mobile-first</h2>
+      <p>Over <strong>60% of web traffic</strong> comes from mobile devices. If your website doesn't work perfectly on a smartphone — with fast loading, easy navigation and large buttons — you're losing half the market.</p>
+      <div class="callout">
+        <p>💡 <strong>Test it:</strong> Open your page on a mobile device. Can you read easily? Tap the buttons? Fill in the form without zooming?</p>
+      </div>
+
+      <h2>Conclusion</h2>
+      <p>A website that doesn't convert isn't just "bad design" — it's lost money. The good news is these problems can be fixed. With the right strategy and technical implementation, you can turn your website from a "digital storefront" into a "24/7 salesperson".</p>
+    </div>
+
+    <div class="article-cta">
+      <h3 data-i18n="article_cta_h"></h3>
+      <p data-i18n="article_cta_p"></p>
+      <a href="../contact.html" class="btn-cta" data-i18n="nav_cta"></a>
+    </div>
+
+  </div>
+</div>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html"><img src="../images/logo.png" alt="Dyo Sigma" style="height:44px;width:auto;display:block;"></a>
+        <p data-i18n="footer_tagline"></p>
+      </div>
+      <div class="footer-col">
+        <h5 data-i18n="footer_services_h"></h5>
+        <ul>
+          <li><a href="../index.html#services" data-i18n="footer_s1"></a></li>
+          <li><a href="../index.html#services" data-i18n="footer_s2"></a></li>
+          <li><a href="../index.html#services" data-i18n="footer_s3"></a></li>
+          <li><a href="../index.html#services" data-i18n="footer_s4"></a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 data-i18n="footer_company_h"></h5>
+        <ul>
+          <li><a href="../about.html" data-i18n="footer_c1"></a></li>
+          <li><a href="../portfolio.html" data-i18n="footer_c2"></a></li>
+          <li><a href="../blog.html" data-i18n="footer_c3"></a></li>
+          <li><a href="../contact.html" data-i18n="footer_c4"></a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 data-i18n="footer_solutions_h"></h5>
+        <ul>
+          <li><a href="#" data-i18n="footer_l1"></a></li>
+          <li><a href="#" data-i18n="footer_l2"></a></li>
+          <li><a href="#" data-i18n="footer_l3"></a></li>
+          <li><a href="#" data-i18n="footer_l4"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer_copyright"></span>
+      <div class="lang-switch">
+        <button class="lang-btn" data-lang="el">ΕΛ</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

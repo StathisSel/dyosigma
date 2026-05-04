@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI automations που εξοικονομούν χρόνο — Dyo Sigma Blog</title>
+  <meta name="description" content="Πρακτικά παραδείγματα χρήσης AI για αυτοματισμό καθημερινών εργασιών.">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .article-hero { padding:4rem 0 3rem; border-bottom:1px solid var(--border); background:radial-gradient(ellipse at 50% 0%, rgba(79,124,255,0.07) 0%, transparent 70%); }
+    .article-meta { display:flex; gap:1rem; align-items:center; flex-wrap:wrap; margin-bottom:1.5rem; }
+    .article-tag { font-size:0.72rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--accent); background:var(--accent-glow); padding:4px 12px; border-radius:100px; }
+    .article-date, .article-read { font-size:0.82rem; color:var(--muted); }
+    .article-body { max-width:720px; margin:0 auto; padding:4rem 0 6rem; }
+    .article-body h2 { font-size:1.6rem; margin:2.5rem 0 1rem; color:var(--white); }
+    .article-body p { margin-bottom:1.2rem; font-size:1.02rem; line-height:1.75; }
+    .article-body ul { margin:0 0 1.5rem 1.5rem; }
+    .article-body ul li { color:var(--muted); font-size:1rem; line-height:1.7; margin-bottom:0.4rem; }
+    .article-body strong { color:var(--white); }
+    .article-body .callout { background:var(--card); border:1px solid var(--border); border-left:3px solid var(--accent); border-radius:0 var(--radius) var(--radius) 0; padding:1.2rem 1.5rem; margin:2rem 0; }
+    .article-body .callout p { margin:0; font-size:0.95rem; }
+    .back-btn { display:inline-flex; align-items:center; gap:0.5rem; font-family:var(--font-display); font-size:0.85rem; font-weight:600; color:var(--muted); transition:color var(--transition); margin-bottom:2rem; }
+    .back-btn:hover { color:var(--white); }
+    .article-cta { background:linear-gradient(135deg,rgba(79,124,255,0.1),rgba(0,212,170,0.05)); border:1px solid var(--border); border-radius:var(--radius); padding:2.5rem; text-align:center; margin-top:4rem; }
+    .article-cta h3 { margin-bottom:0.75rem; }
+    .article-cta p { margin-bottom:1.5rem; }
+    .author-box { display:flex; gap:1rem; align-items:center; background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:1.5rem; margin:3rem 0; }
+    .author-avatar { width:52px; height:52px; border-radius:50%; background:linear-gradient(135deg,var(--accent),var(--accent2)); display:flex; align-items:center; justify-content:center; font-family:var(--font-display); font-size:1.1rem; font-weight:800; color:#fff; flex-shrink:0; }
+    .author-info strong { font-family:var(--font-display); font-size:0.95rem; font-weight:600; display:block; }
+    .author-info span { font-size:0.82rem; color:var(--muted); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="../index.html"><img src="../images/logo.png" alt="Dyo Sigma" style="height:56px;width:auto;display:block;"></a>
+  <ul class="nav-links">
+    <li><a href="../index.html#services" data-i18n="nav_services"></a></li>
+    <li><a href="../about.html" data-i18n="nav_about"></a></li>
+    <li><a href="../portfolio.html" data-i18n="nav_portfolio"></a></li>
+    <li><a href="../blog.html" class="active" data-i18n="nav_blog"></a></li>
+    <li><a href="../index.html#pricing" data-i18n="nav_pricing"></a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-switch">
+      <button class="lang-btn" data-lang="el">ΕΛ</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+    <a href="../contact.html" class="btn-cta" data-i18n="nav_cta"></a>
+  </div>
+  <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu">
+  <a href="../index.html#services" data-i18n="nav_services"></a>
+  <a href="../about.html" data-i18n="nav_about"></a>
+  <a href="../portfolio.html" data-i18n="nav_portfolio"></a>
+  <a href="../blog.html" data-i18n="nav_blog"></a>
+  <a href="../index.html#pricing" data-i18n="nav_pricing"></a>
+  <a href="../contact.html" class="btn-cta" data-i18n="nav_cta"></a>
+</div>
+
+<main>
+
+<section class="article-hero">
+  <div class="container">
+    <a href="../blog.html" class="back-btn fade-up">
+      <span>←</span><span data-i18n="back_blog"></span>
+    </a>
+    <div class="article-meta fade-up delay-1">
+      <span class="article-tag" data-i18n="b3_tag"></span>
+      <span class="article-date" data-i18n="b3_date"></span>
+      <span class="article-read" data-i18n="read_time_3"></span>
+    </div>
+    <h1 class="fade-up delay-2" data-i18n="b3_title"></h1>
+    <p class="fade-up delay-3" style="max-width:620px; font-size:1.1rem; margin-top:1rem;" data-i18n="b3_desc"></p>
+  </div>
+</section>
+
+<div class="container">
+  <div class="article-body">
+
+    <div class="author-box">
+      <div class="author-avatar">Σ</div>
+      <div class="author-info">
+        <strong>Stathis — Dyo Sigma</strong>
+        <span>Founder & Digital Strategist</span>
+      </div>
+    </div>
+
+    <div data-lang-block="el">
+      <p>Το AI δεν είναι πλέον εργαλείο μόνο για μεγάλες εταιρείες. Σήμερα, μια μικρή επιχείρηση στην Ελλάδα μπορεί να αξιοποιήσει AI automations και να εξοικονομήσει <strong>ώρες κάθε εβδομάδα</strong> — χωρίς να χρειάζεται τεχνική γνώση.</p>
+
+      <p>Δες 5 πρακτικά παραδείγματα που μπορεί να εφαρμόσει η επιχείρησή σου σήμερα.</p>
+
+      <h2>1. AI Chatbot για εξυπηρέτηση πελατών</h2>
+      <p>Ένα AI chatbot στο website σου μπορεί να απαντά σε συνηθισμένες ερωτήσεις 24/7, να προγραμματίζει ραντεβού και να συλλέγει στοιχεία από leads — ενώ εσύ κοιμάσαι.</p>
+      <div class="callout">
+        <p>⚡ <strong>Παράδειγμα:</strong> Πελάτης επισκέπτεται τη σελίδα σου στις 23:00. Το chatbot απαντά, συλλέγει τα στοιχεία του και κλείνει ραντεβού. Το πρωί έχεις έτοιμο lead.</p>
+      </div>
+
+      <h2>2. Αυτόματη απάντηση σε leads από forms</h2>
+      <p>Κάθε φορά που κάποιος συμπληρώνει τη φόρμα επικοινωνίας σου, ένα automation μπορεί να:</p>
+      <ul>
+        <li>Στείλει αμέσως personalized email επιβεβαίωσης</li>
+        <li>Δημιουργήσει αυτόματα το lead στο CRM</li>
+        <li>Ειδοποιήσει εσένα με SMS</li>
+        <li>Προγραμματίσει follow-up για 2 ημέρες αργότερα</li>
+      </ul>
+
+      <h2>3. AI για δημιουργία περιεχομένου</h2>
+      <p>Το AI μπορεί να σε βοηθήσει να γράφεις περιγραφές προϊόντων, posts για social media, email newsletters και blog άρθρα σε κλάσμα του χρόνου. Εσύ δίνεις τις οδηγίες, το AI κάνει το draft, εσύ κάνεις τη διόρθωση.</p>
+
+      <h2>4. Αυτόματη διαχείριση αξιολογήσεων (Reviews)</h2>
+      <p>Ένα σύστημα automation μπορεί να στέλνει αυτόματα αίτημα για αξιολόγηση σε ευχαριστημένους πελάτες 2-3 ημέρες μετά την ολοκλήρωση μιας παραγγελίας ή υπηρεσίας. Αποτέλεσμα: <strong>περισσότερα Google Reviews χωρίς χειροκίνητη προσπάθεια</strong>.</p>
+      <div class="callout">
+        <p>📊 <strong>Γεγονός:</strong> Το 88% των καταναλωτών εμπιστεύεται τις online αξιολογήσεις τόσο όσο και τις προσωπικές συστάσεις.</p>
+      </div>
+
+      <h2>5. AI για ανάλυση δεδομένων και αναφορές</h2>
+      <p>Αντί να ξοδεύεις ώρες φτιάχνοντας reports χειροκίνητα, AI εργαλεία μπορούν να αναλύσουν τα δεδομένα πωλήσεων, website traffic, και email campaigns και να σου δώσουν actionable insights σε λίγα δευτερόλεπτα.</p>
+
+      <h2>Πού να ξεκινήσεις;</h2>
+      <p>Μην προσπαθείς να κάνεις τα πάντα ταυτόχρονα. Ξεκίνα με ένα automation — για παράδειγμα, το αυτόματο follow-up email μετά τη φόρμα επικοινωνίας — δες τα αποτελέσματα, και μετά πρόσθεσε το επόμενο.</p>
+
+      <p>Στη Dyo Sigma χτίζουμε αυτά τα συστήματα για επιχειρήσεις κάθε μεγέθους. Επικοινώνησε μαζί μας για να δούμε τι μπορεί να κάνει το AI για εσένα.</p>
+    </div>
+
+    <div data-lang-block="en" style="display:none;">
+      <p>AI is no longer a tool only for large companies. Today, a small business in Greece can leverage AI automations and save <strong>hours every week</strong> — without needing technical knowledge.</p>
+
+      <p>Here are 5 practical examples your business can implement today.</p>
+
+      <h2>1. AI Chatbot for customer service</h2>
+      <p>An AI chatbot on your website can answer common questions 24/7, schedule appointments and collect information from leads — while you sleep.</p>
+      <div class="callout">
+        <p>⚡ <strong>Example:</strong> A customer visits your page at 11pm. The chatbot responds, collects their details and books an appointment. In the morning you have a ready lead.</p>
+      </div>
+
+      <h2>2. Automatic reply to form leads</h2>
+      <p>Every time someone fills out your contact form, an automation can:</p>
+      <ul>
+        <li>Immediately send a personalised confirmation email</li>
+        <li>Automatically create the lead in the CRM</li>
+        <li>Notify you via SMS</li>
+        <li>Schedule a follow-up for 2 days later</li>
+      </ul>
+
+      <h2>3. AI for content creation</h2>
+      <p>AI can help you write product descriptions, social media posts, email newsletters and blog articles in a fraction of the time. You give the instructions, AI does the draft, you do the editing.</p>
+
+      <h2>4. Automatic review management</h2>
+      <p>An automation system can automatically send a review request to satisfied customers 2-3 days after completing an order or service. Result: <strong>more Google Reviews without manual effort</strong>.</p>
+      <div class="callout">
+        <p>📊 <strong>Fact:</strong> 88% of consumers trust online reviews as much as personal recommendations.</p>
+      </div>
+
+      <h2>5. AI for data analysis and reports</h2>
+      <p>Instead of spending hours manually creating reports, AI tools can analyse sales data, website traffic, and email campaigns and give you actionable insights in seconds.</p>
+
+      <h2>Where to start?</h2>
+      <p>Don't try to do everything at once. Start with one automation — for example, the automatic follow-up email after the contact form — see the results, and then add the next one.</p>
+
+      <p>At Dyo Sigma we build these systems for businesses of all sizes. Contact us to see what AI can do for you.</p>
+    </div>
+
+    <div class="article-cta">
+      <h3 data-i18n="article_cta_h"></h3>
+      <p data-i18n="article_cta_p"></p>
+      <a href="../contact.html" class="btn-cta" data-i18n="nav_cta"></a>
+    </div>
+
+  </div>
+</div>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html"><img src="../images/logo.png" alt="Dyo Sigma" style="height:44px;width:auto;display:block;"></a>
+        <p data-i18n="footer_tagline"></p>
+      </div>
+      <div class="footer-col"><h5 data-i18n="footer_services_h"></h5><ul><li><a href="../index.html#services" data-i18n="footer_s1"></a></li><li><a href="../index.html#services" data-i18n="footer_s2"></a></li><li><a href="../index.html#services" data-i18n="footer_s3"></a></li><li><a href="../index.html#services" data-i18n="footer_s4"></a></li></ul></div>
+      <div class="footer-col"><h5 data-i18n="footer_company_h"></h5><ul><li><a href="../about.html" data-i18n="footer_c1"></a></li><li><a href="../portfolio.html" data-i18n="footer_c2"></a></li><li><a href="../blog.html" data-i18n="footer_c3"></a></li><li><a href="../contact.html" data-i18n="footer_c4"></a></li></ul></div>
+      <div class="footer-col"><h5 data-i18n="footer_solutions_h"></h5><ul><li><a href="#" data-i18n="footer_l1"></a></li><li><a href="#" data-i18n="footer_l2"></a></li><li><a href="#" data-i18n="footer_l3"></a></li><li><a href="#" data-i18n="footer_l4"></a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer_copyright"></span>
+      <div class="lang-switch"><button class="lang-btn" data-lang="el">ΕΛ</button><button class="lang-btn" data-lang="en">EN</button></div>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>
